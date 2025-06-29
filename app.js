@@ -26,4 +26,7 @@ app.use((req, res) => {
   res.status(404).send({ status: false, message: "API not found" });
 });
 
+// Global/Central error handler
+app.use(errorHandler);
+
 module.exports = app;
