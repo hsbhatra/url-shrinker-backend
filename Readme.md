@@ -29,7 +29,7 @@ Screenshots/
 ## Getting Started
 
 ### Prerequisites
-- Node.js (v14 or above recommended)
+- Node.js (v22 or above recommended)
 - npm
 
 ### Installation
@@ -44,9 +44,14 @@ Screenshots/
    ```
 3. Configure environment variables in the `config` folder as needed.
 4. Start the server:
-   ```powershell
-   npm start
-   ```
+  - For development:
+    ```powershell
+    npm run dev
+    ```
+  - For production:
+    ```powershell
+    npm start
+    ```
 
 ## API Endpoints
 - `POST /api/url/shorten` - Shorten a long URL
